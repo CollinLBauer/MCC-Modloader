@@ -17,3 +17,5 @@ Choosing F will display this message.
 To add a mod, make a copy of the original file and add ".original" to the file extension (e.g. file.map -> file.map.original). Then add ".mod" to the file extension of the "mod" version of the file (e.g. file.map -> file.map.mod). Both files should be in the same location as the original file.
 
 Some(Few) mods do not require this modloader because they are allowed in online multiplayer.
+
+This project uses the GNU GENERAL PUBLIC LICENSE.
