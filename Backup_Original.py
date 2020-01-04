@@ -14,16 +14,17 @@ def backup_original():
 
 
 def main():
+  '''
   if not os.path.exists(dir):
     print("Map directory not found!\nPlease change the directoy in settings.json")
     return
+    '''
   
-  print("""
-  This program will backup all vanilla map files.
-  WARNING: This utility assumes all current .map files are vanilla.
-  Any currently backed up map files will be lost.
+  print("""This program will backup all vanilla map files.
+WARNING: This utility assumes all currently active .map files are vanilla.
+Any currently backed up map files will be lost.
 
-  Are you sure you want to continue? y/n:""",
+Are you sure you want to continue? y/n: """,
   end="")
 
   answer = ""
