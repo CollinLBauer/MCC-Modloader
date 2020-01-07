@@ -38,6 +38,13 @@ def modlist():
             modl.append(filename)
   return modl
 
-def launch(modded):
+def launch(modded,steam):
     if(shouldlaunch.get()):
       window.destroy()
+      if(modded)
+        if(steam)
+          #subprocess.call([])
+      else:
+        if(steam)
+          #subprocess.call([])
+
