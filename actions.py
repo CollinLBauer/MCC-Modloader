@@ -13,18 +13,18 @@ def vanilla():
         if ext == ".original":
             shutil.move(os.path.join(dir, file),os.path.join(dir, base))
             shutil.copyfile(os.path.join(dir, base), os.path.join(dir, base+'.original'))
-  return false
+  return False
   print("Halo MCC Ready to play without mods")
 
   def modded():
-  for subdir, dirs, files in os.walk(dir):
-    for filename in files:
+    for subdir, dirs, files in os.walk(dir):
+      for filename in files:
         file = subdir + os.sep + filename
         base, ext = os.path.splitext(file)
         if ext == ".mod":
-            shutil.move(os.path.join(dir, file),os.path.join(dir, base))
-            shutil.copyfile(os.path.join(dir, base), os.path.join(dir, base+'.mod'))
-  return true
+          shutil.move(os.path.join(dir, file),os.path.join(dir, base))
+          shutil.copyfile(os.path.join(dir, base), os.path.join(dir, base+'.mod'))
+      return True
   print("Halo MCC Ready to play with mods")
 
 def modlist():
@@ -38,13 +38,13 @@ def modlist():
             modl.append(filename)
   return modl
 
-def launch(modded,steam):
-    if(shouldlaunch.get()):
-      window.destroy()
-      if(modded)
-        if(steam)
-          #subprocess.call([])
-      else:
-        if(steam)
-          #subprocess.call([])
+#def launch(modded,steam):
+#    if(shouldlaunch.get()):
+#      window.destroy()
+#      if(modded)
+#        if(steam)
+#          #subprocess.call([])
+#      else:
+#        if(steam)
+#          #subprocess.call([])
 
