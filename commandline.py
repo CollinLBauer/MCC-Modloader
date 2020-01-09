@@ -2,9 +2,11 @@ import os
 import sys
 from pathlib import Path
 import shutil 
+import json
 
-dir = r"C:\Games\Steam\steamapps\common\Halo The Master Chief Collection" 
-#change this to the path of your Halo MCC folder if neccesary
+with open("settings.json", "r") as settings:
+    dir = json.loads(settings.read())["directory"]
+
 
 def menu():
     print("\nHalo: The Master Chief Collection Modloader")
@@ -83,4 +85,12 @@ If you need further help, or wish to contribute then please visit the Github pag
   menu()
 
 
-menu()
+def main():
+  if not os.path.exists(dir):
+    print("Map directory not found!\nPlease change the directoy in settings.json")
+    return
+  
+  menu()
+
+
+main()
