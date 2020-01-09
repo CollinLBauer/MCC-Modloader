@@ -5,6 +5,8 @@ import shutil
 import hashlib
 
 #Utilities file, used by gui and cmd to perform correct actions
+#cmd-specific-actions.py for cmd only actions
+#gui-specific-actions.py for gui only actions
 
 BLOCKSIZE = 65536
 # Compare SHA256 of current file with original file
