@@ -50,14 +50,16 @@ def modded():
   print("Halo MCC Ready to play with mods")
   menu()
   
-def modlist():
-  print("Mods:")
+def modlist(dir):
+  #print("Mods:")
+  modl=[]
   for subdir, dirs, files in os.walk(dir):
     for filename in files:
         file = subdir + os.sep + filename
         base, ext = os.path.splitext(file)
         if ext == ".mod":
-            print(file)
+            modl.append(filename)
+  return modl
   menu()
   
 def help():
