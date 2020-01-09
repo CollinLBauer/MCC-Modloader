@@ -7,6 +7,9 @@ import json
 with open("settings.json", "r") as settings:
   dir = json.loads(settings.read())["directory"]
 
+def backup_file(filename):
+  print("Not yet implemented.")
+  pass
 
 def backup_original():
   print("Not yet implemented.")
