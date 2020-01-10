@@ -132,3 +132,4 @@ def verify_path():
     print("Map directory not found!\nPlease change the directoy in settings.json")
     return False
   return True
+  
