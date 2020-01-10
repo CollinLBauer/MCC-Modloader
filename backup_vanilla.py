@@ -1,14 +1,13 @@
 import os
 import sys
-from pathlib import Path
-import shutil 
 import json
 
 with open("settings.json", "r") as settings:
   dir = json.loads(settings.read())["directory"]
 
+
 def backup_file(filename):
-  print("Not yet implemented.")
+  
   pass
 
 def backup_original():
@@ -17,11 +16,9 @@ def backup_original():
 
 
 def main():
-  '''
   if not os.path.exists(dir):
     print("Map directory not found!\nPlease change the directoy in settings.json")
     return
-    '''
   
   print("""This program will backup all vanilla map files.
 WARNING: This utility assumes all currently active .map files are vanilla.
