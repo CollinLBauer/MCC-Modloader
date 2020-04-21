@@ -10,9 +10,9 @@ I'm gonna take this fork in a different direction. We'll see what happens.
 
 ---
 
-## TODO
+### TODO
 - Switch to a compiled language (Rust?)
-  - *I want the function to be launched as an executable and not require any dependencies or unneccesary bloat.*
+  - *I want the app to be launched as an executable and not require any runtime dependencies or unneccesary bloat.*
 - Populate hash lists
 - Create mod file structure
 - Vanilla backup functions
