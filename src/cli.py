@@ -10,11 +10,10 @@ with open("settings.json", "r") as settings:
 
 
 def main():
-  if not os.path.exists(dir):
-    print("Map directory not found!\nPlease change the directoy in settings.json")
-    return
+    if not os.path.exists(dir):
+        print("Map directory not found!\nPlease change the directoy in settings.json")
+        return
   
-  menu()
-
+    menu()
 
 main()
