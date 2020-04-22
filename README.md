@@ -10,17 +10,6 @@ I'm gonna take this fork in a different direction. We'll see what happens.
 
 ---
 
-### TODO
-- Switch to a compiled language (Rust?)
-  - *I want the app to be launched as an executable and not require any runtime dependencies or unneccesary bloat.*
-- Populate hash lists
-- Create mod file structure
-- Vanilla backup functions
-- Swap functions (ideally through symbolic linking)
-  - if symlinks are used, an uninstaller would probably be nice.
-- GUI
-- Lots of other things, probably.
-
-Any contributions would be appreciated.
+This branch is for a complete rewrite with the Rust programming language. If all goes well, I'll stick to it. I'm learning the language as I go, so this could get interesting.
 
 This project uses the GNU GENERAL PUBLIC LICENSE.
