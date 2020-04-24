@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 import shutil 
 import json
-from cmd-specific-actions import *
+from cmd_specific_actions import *
 
 with open("settings.json", "r") as settings:
     dir = json.loads(settings.read())["directory"]

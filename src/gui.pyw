@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
 from tkinter import scrolledtext
-import actions
 
 #Main file - should be executed
 
@@ -37,5 +36,5 @@ root.geometry("400x300")
 
 app= Window(root)
 
-root.iconbitmap("resources/masterchief.ico")
+root.iconbitmap("assets/masterchief.ico")
 root.mainloop()
