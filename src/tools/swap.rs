@@ -7,7 +7,7 @@
 // It makes swapping between them much easier,
 // Downside is a lot of really small maps are gonna have seemingly pointless nested folders.
 
-fn load_mod(mod_name: str, ) {
+fn load_mod(mod_name: &str, ) {
     println!("TODO");
     /* goto modding folder --> mod_name
      * for each subfolder in {halo1\original\buildmaps, halo2\h2_maps_win64_dx11, groundhog\maps, h3?, odst?, h4?, haloreach\maps}

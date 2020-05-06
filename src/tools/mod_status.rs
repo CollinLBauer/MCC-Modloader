@@ -2,7 +2,7 @@ use sha1::{Sha1, Digest};
 use std::fs;
 use std::io::{Read};
 
-const BUFFER_SIZE: u32 = 65536;
+const BUFFER_SIZE: usize = 65536;
 
 fn print_result(sum: &[u8], name: &str) {
     for byte in sum {
@@ -27,8 +27,9 @@ fn process<D: Digest + Default, R: Read>(reader: &mut R, name: &str) {
     print_result(&sh.result(), name);
 }
 
-
-pub fn compare_hashes(path:String) {
+// returns true if they are the same
+// false if different
+pub fn compare_hashes(path:String) -> bool {
     
     println!("file_path: {}", path);
     
@@ -36,6 +37,6 @@ pub fn compare_hashes(path:String) {
     let file = fs::File::open(&path);
     process::<Sha1, _>(&mut file, &path);
 
-
-
+    println!("TODO");
+    return false;
 }

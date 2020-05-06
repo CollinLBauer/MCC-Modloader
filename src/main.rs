@@ -1,5 +1,5 @@
+//#[macro_use] extern crate hex_literal;
 pub mod tools;
-
 use std::env;
 use tools::mod_status;
 
@@ -24,8 +24,8 @@ macro_rules! help_message {
 
 fn main() {
     /* execute based on arguments, if supplied
-     * defaults to CLI, for now
-     * will eventually default to GUI once more work has been put there
+     * defaults to CLI for now
+     * will eventually default to GUI once more work has been done there
      */
     let args: Vec<String> = env::args().collect();
     match args.len() {
